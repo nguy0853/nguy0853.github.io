@@ -19,24 +19,27 @@
         <main class="main">
             <section class="intro">
                 <h1>Want to be your own boss?</h1>
-                <h2>Start today and make up to $30/hr driving your own vehicle with Dash!</h2>
+                <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
                 <img src="images/bg-image/scooter.svg" alt="Scooter Photo" class="scooter">
             </section>
             
             <!-- Call-to-Action section -->
-            <section id="cta-form">
+            <section class="cta-form">
                 <h2 class="form-title">Apply Now</h2>
                 <p>Enter your info below.</p>
                 <form class="contact-form" action="#" method="get">
-                    <input type="text" class="full-name" name="full-name" placeholder="First name" required><br><br>
-                    <input type="text" class="last-name" name="last-name" placeholder="Last name" required><br><br>
-                    <input type="text" class="phone-number" name="phone-number" placeholder="Phone number" required><br><br>
-                    <input type="text" class="email" name="email" placeholder="Email Address" required><br><br>
+                    <input type="text" class="cta-text" name="full-name" placeholder="First name" required><br><br>
+                    <input type="text" class="cta-text" name="last-name" placeholder="Last name" required><br><br>
+                    <input type="text" class="cta-text" name="phone-number" placeholder="Phone number" required><br><br>
+                    <input type="text" class="cta-text" name="email" placeholder="Email Address" required><br><br>
                     <input type="checkbox" id="agreement" name="agreement" required checked>
-                    <label for="agreement">I agree to dash terms</label>
-                    <button type="submit">Drive with us</button>
+                    <label for="agreement">I agree to dash terms</label><br><br>
+                    <button type="submit" class="btn-drive">Drive with us</button>
                 </form>
-                <p>Already applied?</p> <p class="red-text">Check your application status here</p>
+                <div>
+                    <span>Already applied?</span> <span class="red-text">Check your application status here</span>
+                </div>
+    
             </section>
         </main>
      <!-- Footer with CTA form and Social Media -->
@@ -44,10 +47,10 @@
             <div class="footer-cta-form">
                 <h3>See how much you can earn with Dash.</h3>
                 <p>How many hours do you want to drive with us this week?</p>
-                <form class="calculation-form" action="#" method="get">
-                    <input type="text" class="hours" name="hours" placeholder="Hours"><br><br>
-                    <input type="text" class="city" name="city" placeholder="City" required><br><br>
-                    <button type="submit">Calculate</button>
+                <form id="calculation-form" action="#" method="get">
+                    <input type="text" id="hours" class="cal-box" name="hours" placeholder="Hours"><br><br>
+                    <input type="text" id="city" class="cal-box" name="city" placeholder="City" required><br><br>
+                    <button type="submit" class="btn-calculate">Calculate</button>
                 </form>
             </div>
             <div class="social-media">
