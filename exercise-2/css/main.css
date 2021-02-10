@@ -1,6 +1,8 @@
+/* Start with styling mobile version */
+
 /* Add padding to the page container */
 .container {
-    padding: 0 1em 0;
+    padding: 0 1em;
 }
 
 /* Change the font and set margin and padding */
@@ -60,7 +62,6 @@ p {
 }
 
 /* Fix the div content postition */
-
 .content {
     position: relative;
     top: -15%;
@@ -82,7 +83,7 @@ p {
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
-/* Fixing the margin of the writing right under the heading in the form and have no padding on it. */
+/* Fix the margin of the text under the heading 1 in the form with no padding */
 .cta-form p {
     margin: 10px;
     padding: 0;
@@ -122,7 +123,6 @@ input[type="checkbox"] {
     padding: .5em 1.5em;
 }
 
-
 .btn-drive {
     background-color: #57EEAB;
     color: #333131;
@@ -151,7 +151,7 @@ a {
 footer {
     background-color: #fffd8c;
     padding: 1em 2em;
-    margin: 0 -1rem;
+    margin: 0 -1.5rem;
 }
 
 /* Fix the size of the writing in the footer.  */
@@ -164,7 +164,7 @@ footer p {
     margin: 5px 0;
 }
 
-/* Design the 2 inputs in the footer by adding a background colour, no border,border radius, and a padding. The margin is to add space between each other */
+/* Design the 2 inputs in the footer by adding a background colour, no border,border radius */
 
 .calculation-form input[type=text] {
     background-color: #f7f7f7;
@@ -176,12 +176,12 @@ footer p {
 
 /* Adjust the width of the Hours input */
 .calculation-form .hours {
-    width: 15%;
+    width: 26%;
 }
 
 /* Adjust the width of the City input */
 .calculation-form .city {
-    width: 65%;
+    width: 60%;
 }
 
 /* Add a background colour, border, border radius, width, and a padding to the Calculate button */
@@ -198,7 +198,7 @@ footer p {
     width: 100%;
 }
 
-/* Adding a CSS Flexbox to create space between social media icons. */
+/* Add a CSS Flexbox to create space between social media icons */
 .social-media {
     display: flex;
     flex-direction: row;
@@ -210,17 +210,25 @@ footer p {
     width: 30px;
 }
 
+/* Use CSS Flexbox to make hours and city input stay inline */
+.cal-input {
+    margin: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 /* ----------------------------------------
 ------------------------------------------- */
 /* Use CSS Media Queries for styling the tablet version. */
 @media screen and (min-width: 768px) {
 
-    /* Fixing the font size on header 1. */
+    /* Fixi the font size of header 1 */
     h1 {
         font-size: 80px;
     }
 
-    /* Adding CSS Flexbox to the section to make it center (mostly for the form). Making the background image size to 50% of it's original size and positiioning it up more but keeping it center. */
+    /* Add CSS Flexbox to the section to make it center  */
     .main {
         background-position: center 35%;
         background-size: 60%;
@@ -237,14 +245,14 @@ footer p {
         top: -20%;
     }
 
-    /* Fixing the width of the form. */
+    /* Fix the width of the form. */
     .cta-form {
         width: auto;
         position: relative;
         top: 1em;
     }
 
-    /* Fixing the font size of the button in the form. */
+    /* Fix the font size of the button */
     button {
         font-size: 32px;
     }
@@ -254,22 +262,22 @@ footer p {
         padding: 5px 10px;
     }
 
-    /* Fixing the width of the calculate button in the footer. */
+    /* Fix the width of the calculate button in the footer */
     .btn-calculate {
         width: 200px;
     }
 
-    /* Fixing the width of the hours input in footer. */
+    /* Fix the width of the hours input in footer */
     .hours {
         width: 120px;
     }
 
-    /* Fixing the width of the city input in the footer */
+    /* Fix the width of the city input in the footer */
     .city {
         width: 260px;
     }
 
-    /* Using CSS Flexbox to make the icons space out evenly and in the center. */
+    /* Using CSS Flexbox to make the icons space out evenly in the center  */
     .social-media {
         display: flex;
         flex-direction: row;
@@ -346,5 +354,15 @@ footer p {
     #linkedin {
         order: 4;
         padding: 1em;
+    }
+
+    /* Use CSS Flexbox to make hours, city input and Calculate button stay inline */
+
+    .cal-input.btn-calculate {
+        width: 100%;
+        margin: 1em 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 }
