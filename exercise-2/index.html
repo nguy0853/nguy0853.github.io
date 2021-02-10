@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- Icon fonts -->
     <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
     <!-- Custom Styles -->
@@ -13,16 +18,17 @@
 
 <body>
     <div class="container">
-        <header class="masthead">
-            <img src="images/logo/logo.png" alt="Main Logo" class="main-logo">
-        </header>
         <main class="main">
-            <section class="intro">
+            <header class="masthead">
+                <img src="images/logo/logo.png" alt="Main Logo" class="main-logo">
+            </header>
+            <section class="content">
                 <h1>Want to be your own boss?</h1>
-                <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
-                <img src="images/bg-image/scooter.svg" alt="Scooter Photo" class="scooter">
+                <p class="intro">Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+                <!-- <div class="scooter-container"><img src="images/bg-image/scooter.svg" alt="Scooter Photo"
+                        class="scooter"></div> -->
             </section>
-            
+
             <!-- Call-to-Action section -->
             <section class="cta-form">
                 <h2 class="form-title">Apply Now</h2>
@@ -32,25 +38,30 @@
                     <input type="text" class="cta-text" name="last-name" placeholder="Last name" required><br><br>
                     <input type="text" class="cta-text" name="phone-number" placeholder="Phone number" required><br><br>
                     <input type="text" class="cta-text" name="email" placeholder="Email Address" required><br><br>
-                    <input type="checkbox" id="agreement" name="agreement" required checked>
-                    <label for="agreement">I agree to dash terms</label><br><br>
+                    <div class="checkbox">
+                        <input type="checkbox" class="agreement" name="agreement" required checked>
+                        <label for="agreement">I agree to dash terms</label><br><br>
+                    </div>
+
                     <button type="submit" class="btn-drive">Drive with us</button>
                 </form>
                 <div>
-                    <span>Already applied?</span> <span class="red-text">Check your application status here</span>
+                    <p class="alr-applied">Already applied? <a href=""> Check your application status here </a></p>
                 </div>
-    
+
             </section>
         </main>
-     <!-- Footer with CTA form and Social Media -->
+        <!-- Footer with CTA form and Social Media -->
         <footer class="site-footer">
             <div class="footer-cta-form">
                 <h3>See how much you can earn with Dash.</h3>
                 <p>How many hours do you want to drive with us this week?</p>
-                <form id="calculation-form" action="#" method="get">
-                    <input type="text" id="hours" class="cal-box" name="hours" placeholder="Hours"><br><br>
-                    <input type="text" id="city" class="cal-box" name="city" placeholder="City" required><br><br>
-                    <button type="submit" class="btn-calculate">Calculate</button>
+                <form class="calculation-form" action="#" method="get">
+                    <div class="cal-input">
+                        <input type="text" class="hours" class="cal-box" name="hours" placeholder="Hours"><br><br>
+                        <input type="text" class="city" class="cal-box" name="city" placeholder="City" required><br><br>
+                    </div>
+                    <button type="submit" class="btn-calculate">CALCULATE</button>
                 </form>
             </div>
             <div class="social-media">
@@ -62,4 +73,5 @@
         </footer>
     </div>
 </body>
+
 </html>
