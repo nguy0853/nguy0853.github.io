@@ -1,90 +1,95 @@
 /* Add padding to the page container */
-.container{
+.container {
     padding: 0 1em 0;
- }
+}
 
- /* Change the font and set margin and padding */
- html{
-     font-family: 'Montserrat', sans-serif;
-     margin: 0;
-     padding: 0;
- }
+/* Change the font and set margin and padding */
+html {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- /* Change the background colour */
- body{
-     background-color: #f7f7f7;
- }
+/* Change the background colour */
+body {
+    background-color: #f7f7f7;
+}
 
- /* Fix the Heading 1 font size and font weight*/
- h1{
-     font-weight: 700;
-     font-size: 60px;
-     margin: 5px 0 10px 0 ;
- }
+/* Fix the Heading 1 font size and font weight*/
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin: 0 0.2em;
+}
 
- /* Fix the Heading 2 font size, font weight and margin. */
- h2{
-     font-size: 40px;
-     font-weight: 700;
-     margin: 10px;
- }
- /* Fix the font size of heading 3. */
+/* Fix the Heading 2 font size, font weight and margin. */
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px;
+}
 
- h3{
-     font-size: 18px;
- }
+/* Fix the font size of heading 3. */
 
- /* Change paragraph font size and margin  */
- p{
-     font-size: 18px;
-     margin: 0;
- }
- /* Enlarge the logo size */
- .main-logo {
-     width: 115px;
-     height: auto;
- } 
+h3 {
+    font-size: 18px;
+}
 
- /* Set the scooter image as background image and adjust the position. Use CSS Grid to make the section of header 1 and form to be in a row and having a gap to see the background image and to have space between them. The padding is used on have space at the top and bottom of the grid.   */
+/* Change paragraph font size and margin  */
+p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Enlarge the logo size */
+.main-logo {
+    max-width: 115px;
+}
+
+/* Set the scooter image as background image and adjust the position */
 .main {
-     background-image: url(../images/bg-image/scooter.svg);
-     background-position: center 41%;
-     background-size: 100%;
-     background-repeat: no-repeat;
-     display: grid;
-     grid-auto-flow: row;
-     gap: 5em;
-     padding: 3em 0 4em 0;  
- }
+    background-image: url(../images/bg-image/scooter.svg);
+    background-position: center 40%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10em;
+    padding: 3em 0;
+}
 
- /* Fix the div content postition */
+/* Fix the div content postition */
 
- .content {
+.content {
+    position: relative;
+    top: -15%;
+}
 
- }
- 
- /* Fix the intro font size */
- .intro {
-     font-size: 24px;
- }
- 
- /* Style out the Call to Action form by adding a background colour, border, padding, border shadow and radius */
- .cta-form {
+/* Fix the intro font size */
+.intro {
+    font-size: 24px;
+    margin: 0 0.5em;
+}
+
+
+/* Style out the Call to Action form by adding a background colour, border, padding, border shadow and radius */
+.cta-form {
     margin: 1em;
     padding: 1em;
     border: #fff solid 1px;
     border-radius: 1.25rem;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
- }
+}
 
- /* Fixing the margin of the writing right under the heading in the form and have no padding on it. */
- .cta-form p{
-     margin: 10px;
-     padding: 0;
- }
+/* Fixing the margin of the writing right under the heading in the form and have no padding on it. */
+.cta-form p {
+    margin: 10px;
+    padding: 0;
+}
 
- input[type=text] {
-    width: 100%;
+input[type=text] {
+    width: 90%;
     padding: 6px 8px;
     border: none;
     border-radius: 8px;
@@ -103,37 +108,13 @@ input[type="checkbox"] {
     font-family: 'montserrat', sans-serif;
     font-size: 1em;
 }
- /* input.terms-checkbox is the checkbox (the box not the writing). Using width and height to make the size of the box bigger.
- input.agreement{
-     width: 25px;
-     height: 25px;
- }
- /* .checkbox is the whole checkbox. Using CSS Flexbox to make the checkbox writing center to the box. Also, fixing the font size of the writing and adding a margin to the whole checkbox.  */
- /* .checkbox{
-     display: flex;
-     align-items: center;
-     font-size: 16px;
-     margin: 10px; */ */
- }
- /* .button is the button in the form. The code in it to designing the button, adding padding, fixing the width, adding the font, and fixing the font size and weight, 
- .btn-drive{
-     background-color: #57eeab;
-     border: 1px solid #57eeab;
-     border-radius: 10px;
-     box-sizing: border-box;
-     padding: 12px 20px;
-     width: 100%;
-     font-family: 'Montserrat', sans-serif;
-     font-size: 24px;
-     font-weight: 700;
- } */
 
- /* Style out the Drive with us button by fixing width and font */
+/* Style out the Drive with us button by fixing width and font */
 .btn-drive {
     background-color: #57EEAB;
     color: #333131;
     font-family: 'montserrat', sans-serif;
-    font-size: 1.2em;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 12px;
@@ -141,54 +122,71 @@ input[type="checkbox"] {
     padding: .5em 1.5em;
 }
 
- p.alr-applied {
-     font-size: 14px;
-     padding: 1em;
- }
- /* Color the link of the application status check to red with no underliner.*/
- a {
-     color: #ff8480;
-     text-decoration: none;
-     font-size: 14px;
- }
 
- /* Change the footer background colour. Use padding and margin to stretch out the footer to the end */
- footer {
-     background-color: #fffd8c;
-     padding: 1em 2em;
-     margin: 0 -1rem;
- }
+.btn-drive {
+    background-color: #57EEAB;
+    color: #333131;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 12px;
+    border: none;
+    padding: .5em 1.5em;
+}
 
- /* Fix the size of the writing in the footer.  */
- footer p{
-     font-size: 16px;
- }
- /* Adding the margin in the Green button and input to create space between the top and the bottom */
- .calculation-form {
-     margin: 5px 0;
- }
- /* Design the 2 inputs in the footer by adding a background colour, no border,border radius, and a padding. The margin is to add space between each other */ 
+p.alr-applied {
+    font-size: 14px;
+    padding: 5px;
+}
 
- .calculation-form input[type=text] {
-     background-color: #f7f7f7;
-     border: none;
-     border-radius: 10px;
-     padding: 1em;
-     margin: 0 5px 0 5px;
- }
- /* Adjust the width of the Hours input */
- .calculation-form .hours{
-     width: 15%;
- }
+/* Color the link of the application status check to red with no underliner.*/
+a {
+    color: #ff8480;
+    text-decoration: none;
+    font-size: 14px;
+}
 
- /* Adjust the width of the City input */
- .calculation-form .city{
-     width: 65%;
- }
+/* Change the footer background colour. Use padding and margin to stretch out the footer to the end */
+footer {
+    background-color: #fffd8c;
+    padding: 1em 2em;
+    margin: 0 -1rem;
+}
 
- /* Add a background colour, border, border radius, width, and a padding to the Calculate button */
-.btn-calculate{
-    background-color:#FF8480;
+/* Fix the size of the writing in the footer.  */
+footer p {
+    font-size: 16px;
+}
+
+/* Add the margin in the Green button and input to create space between the top and the bottom */
+.calculation-form {
+    margin: 5px 0;
+}
+
+/* Design the 2 inputs in the footer by adding a background colour, no border,border radius, and a padding. The margin is to add space between each other */
+
+.calculation-form input[type=text] {
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0 5px;
+}
+
+/* Adjust the width of the Hours input */
+.calculation-form .hours {
+    width: 15%;
+}
+
+/* Adjust the width of the City input */
+.calculation-form .city {
+    width: 65%;
+}
+
+/* Add a background colour, border, border radius, width, and a padding to the Calculate button */
+.btn-calculate {
+    background-color: #FF8480;
     font-family: montserrat, sans-serif;
     color: #F7F7FF;
     font-size: 24px;
@@ -196,18 +194,163 @@ input[type="checkbox"] {
     text-transform: uppercase;
     border-radius: 12px;
     border: none;
-    padding: 5px auto;
+    padding: 5px 0;
     width: 100%;
 }
 
- /* Adding a CSS Flexbox to create space between social media icons. */
- .social-media {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     margin: 20px 0;
- }
+/* Adding a CSS Flexbox to create space between social media icons. */
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
 
- .social-media-icon {
+.social-media-icon {
     width: 30px;
+}
+
+/* ----------------------------------------
+------------------------------------------- */
+/* Use CSS Media Queries for styling the tablet version. */
+@media screen and (min-width: 768px) {
+
+    /* Fixing the font size on header 1. */
+    h1 {
+        font-size: 80px;
+    }
+
+    /* Adding CSS Flexbox to the section to make it center (mostly for the form). Making the background image size to 50% of it's original size and positiioning it up more but keeping it center. */
+    .main {
+        background-position: center 35%;
+        background-size: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: grid;
+        gap: 17em;
+        padding: 3em 0;
+    }
+
+    .content {
+        position: relative;
+        top: -20%;
+    }
+
+    /* Fixing the width of the form. */
+    .cta-form {
+        width: auto;
+        position: relative;
+        top: 1em;
+    }
+
+    /* Fixing the font size of the button in the form. */
+    button {
+        font-size: 32px;
+    }
+
+    section .btn-drive {
+        width: 400px;
+        padding: 5px 10px;
+    }
+
+    /* Fixing the width of the calculate button in the footer. */
+    .btn-calculate {
+        width: 200px;
+    }
+
+    /* Fixing the width of the hours input in footer. */
+    .hours {
+        width: 120px;
+    }
+
+    /* Fixing the width of the city input in the footer */
+    .city {
+        width: 260px;
+    }
+
+    /* Using CSS Flexbox to make the icons space out evenly and in the center. */
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+}
+
+/* Use CSS Media Queries for styling the desktop version. */
+@media screen and (min-width: 1200px) {
+     {
+        margin: 0 auto;
+    }
+
+    .main {
+        margin: 0 80px;
+    }
+
+    .main-logo {
+        margin: 50px 80px;
+    }
+
+
+    .main {
+        background-position: center 50%;
+        background-size: 40%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: (1, 1fr);
+        grid-template-areas: "content""cta-form";
+    }
+
+    .cta-form { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 40%;
+        background-color: #F7F7FF;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60%;
+        position: relative;
+        bottom: 40%;
+        
+    }
+
+
+/* Use the CSS Flexbox to move the social media icons to the right */
+
+.social-media {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 2em;
+}
+
+/* Use CSS Flexbox to adjust the order of Social media icons */
+#facebook {
+    order: 4;
+    padding: 1em;
+}
+
+#instagram {
+    order: 1;
+    padding: 1em;
+}
+
+#twitter {
+    order: 1;
+    padding: 1em;
+}
+
+#linkedin {
+    order: 4;
+    padding: 1em;
+}
+
 }
