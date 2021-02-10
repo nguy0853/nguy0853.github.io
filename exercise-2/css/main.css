@@ -290,38 +290,100 @@ footer p {
 /* Use CSS Media Queries for styling the desktop version. */
 @media screen and (min-width: 1200px) {
     .main {
-        margin: 0 80px;
+        margin: 0 200px;
     }
 
     .main-logo {
-        margin: 50px 80px;
+        max-width: 200px;
+        margin: 0 200px;
     }
 
+    /* Adjust heading and paragraph font size to fit the screen */
+    h1 {
+        font-size: 96px;
+    }
+
+    h2 {
+        font-size: 72px;
+    }
+
+    .cta-form p {
+        font-size: 24px;
+    }
+
+    input[type=text] {
+        width: 90%;
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: #f1f1f1;
+    }
+
+    input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+        border: black 1px solid;
+        border-radius: 15px;
+        background-color: #f1f1f1;
+    }
+
+    ::placeholder {
+        font-family: 'montserrat', sans-serif;
+        font-size: 1em;
+    }
+
+    .checkbox label,
+    a,
+    #alr-applied {
+        font-size: 20px;
+    }
+
+    .btn-drive {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .footer-cta-form p {
+        font-size: 22px;
+    }
+
+    .footer-cta-form {
+        padding: 0 200px;
+    }
+
+
+    /* Use CSS Grid Layout to style out the desktop version. Create 2 columns: content and Call to action form */
+
     .main {
-        background-position: center 50%;
-        background-size: 40%;
+        background-position: center 30%;
+        background-size: 50%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: (1, 1fr);
         grid-template-areas: "content""cta-form";
+
     }
 
     .cta-form {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        width: 40%;
+        width: 50%;
         background-color: #F7F7FF;
+        margin: 0 200px;
     }
 
     .content {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 60%;
+        width: 80%;
         position: relative;
         bottom: 40%;
-
     }
 
 
@@ -357,12 +419,28 @@ footer p {
     }
 
     /* Use CSS Flexbox to make hours, city input and Calculate button stay inline */
+    /* Adjust the width of the Hours input */
+    .calculation-form .hours {
+        width: 5%;
+    }
 
-    .cal-input.btn-calculate {
+    /* Adjust the width of the City input */
+    .calculation-form .city {
+        width: 15%;
+    }
+
+    .btn-calculate {
+        width: 10%;
+        height: auto;
+        font-size: 24px;
+    }
+
+    /* .cal-input .btn-calculate {
         width: 100%;
         margin: 1em 0;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-    }
+    } */
+    
 }
