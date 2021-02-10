@@ -290,12 +290,12 @@ footer p {
 /* Use CSS Media Queries for styling the desktop version. */
 @media screen and (min-width: 1200px) {
     .main {
-        margin: 0 200px;
+        margin: 0 250px;
     }
 
     .main-logo {
         max-width: 200px;
-        margin: 0 200px;
+        margin: 0 250px;
     }
 
     /* Adjust heading and paragraph font size to fit the screen */
@@ -362,7 +362,7 @@ footer p {
         background-position: center 30%;
         background-size: 50%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
         grid-template-rows: (1, 1fr);
         grid-template-areas: "content""cta-form";
 
@@ -372,7 +372,7 @@ footer p {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 50%;
+        width: 60%;
         background-color: #F7F7FF;
         margin: 0 200px;
     }
@@ -393,9 +393,15 @@ footer p {
         display: flex;
         flex-grow: 1;
         justify-content: flex-end;
+        margin-right: 200px;
         position: relative;
-        bottom: 2em;
+        bottom: 8em;
     }
+
+    .social-media-icon {
+        width: 45px;
+    }
+
 
     /* Use CSS Flexbox to adjust the order of Social media icons */
     #facebook {
@@ -442,5 +448,6 @@ footer p {
         flex-wrap: wrap;
         flex-direction: row;
     } */
+    
     
 }
