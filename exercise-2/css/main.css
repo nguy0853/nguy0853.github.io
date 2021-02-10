@@ -1,82 +1,89 @@
-/* --------------------------------
-          Custom Styles
------------------------------------- */
-html {
-    font-family: montserrat, sans-serif;
-    color: #333131;
-    font-size: 16px;
-    box-sizing: border-box;
-}
+/* Add padding to the page container */
+.container{
+    padding: 0 1em 0;
+ }
 
-body {
-    line-height: 1.5;
-}
+ /* Change the font and set margin and padding */
+ html{
+     font-family: 'Montserrat', sans-serif;
+     margin: 0;
+     padding: 0;
+ }
 
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
-    line-height: inherit;
-}
+ /* Change the background colour */
+ body{
+     background-color: #f7f7f7;
+ }
 
-.clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
-}
+ /* Fix the Heading 1 font size and font weight*/
+ h1{
+     font-weight: 700;
+     font-size: 60px;
+     margin: 5px 0 10px 0 ;
+ }
 
-.main-logo {
-    width: 40%;
-    margin: 0 1.5em;
-}
+ /* Fix the Heading 2 font size, font weight and margin. */
+ h2{
+     font-size: 40px;
+     font-weight: 700;
+     margin: 10px;
+ }
+ /* Fix the font size of heading 3. */
 
-h1,
-h2,
-h3 {
-    font-family: montserrat, sans-serif;
-    font-weight: bold;
-}
+ h3{
+     font-size: 18px;
+ }
 
-h1 {
-    /* font-size: 3.052rem; */
-    font-size: 3.052rem;
-    margin: 0 .5em;
-}
+ /* Change paragraph font size and margin  */
+ p{
+     font-size: 18px;
+     margin: 0;
+ }
+ /* Enlarge the logo size */
+ .main-logo {
+     width: 115px;
+     height: auto;
+ } 
 
-h2 {
-    /* font-size: 2.441rem; */
-    font-size: 2.441rem;
-}
+ /* Set the scooter image as background image and adjust the position. Use CSS Grid to make the section of header 1 and form to be in a row and having a gap to see the background image and to have space between them. The padding is used on have space at the top and bottom of the grid.   */
+.main {
+     background-image: url(../images/bg-image/scooter.svg);
+     background-position: center 41%;
+     background-size: 100%;
+     background-repeat: no-repeat;
+     display: grid;
+     grid-auto-flow: row;
+     gap: 5em;
+     padding: 3em 0 4em 0;  
+ }
 
-h3 {
-    /* font-size: 1.25rem; */
-    font-size: 1.25rem;
-}
+ /* Fix the div content postition */
 
+ .content {
 
-
-.intro p {
-    font-size: 1.2rem;
-    margin: 0 1.5em;
-}
-
-/* Styling Scooter photo */
-.scooter {
-    margin: 1em;
-}
-
-/* Styling CTA Form */
-
-.cta-form {
+ }
+ 
+ /* Fix the intro font size */
+ .intro {
+     font-size: 24px;
+ }
+ 
+ /* Style out the Call to Action form by adding a background colour, border, padding, border shadow and radius */
+ .cta-form {
     margin: 1em;
     padding: 1em;
     border: #fff solid 1px;
     border-radius: 1.25rem;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+ }
 
-}
+ /* Fixing the margin of the writing right under the heading in the form and have no padding on it. */
+ .cta-form p{
+     margin: 10px;
+     padding: 0;
+ }
 
-input[type=text] {
+ input[type=text] {
     width: 100%;
     padding: 6px 8px;
     border: none;
@@ -93,16 +100,40 @@ input[type="checkbox"] {
 }
 
 ::placeholder {
-    font-family: montserrat, sans-serif;
+    font-family: 'montserrat', sans-serif;
     font-size: 1em;
 }
+ /* input.terms-checkbox is the checkbox (the box not the writing). Using width and height to make the size of the box bigger.
+ input.agreement{
+     width: 25px;
+     height: 25px;
+ }
+ /* .checkbox is the whole checkbox. Using CSS Flexbox to make the checkbox writing center to the box. Also, fixing the font size of the writing and adding a margin to the whole checkbox.  */
+ /* .checkbox{
+     display: flex;
+     align-items: center;
+     font-size: 16px;
+     margin: 10px; */ */
+ }
+ /* .button is the button in the form. The code in it to designing the button, adding padding, fixing the width, adding the font, and fixing the font size and weight, 
+ .btn-drive{
+     background-color: #57eeab;
+     border: 1px solid #57eeab;
+     border-radius: 10px;
+     box-sizing: border-box;
+     padding: 12px 20px;
+     width: 100%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 24px;
+     font-weight: 700;
+ } */
 
-/* Styling the Drive with us button */
+ /* Style out the Drive with us button by fixing width and font */
 .btn-drive {
     background-color: #57EEAB;
     color: #333131;
-    font-family: montserrat, sans-serif;
-    font-size: 24px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 12px;
@@ -110,27 +141,53 @@ input[type="checkbox"] {
     padding: .5em 1.5em;
 }
 
-/* red text */
-span {
-    font-size: 14px;
-}
+ p.alr-applied {
+     font-size: 14px;
+     padding: 1em;
+ }
+ /* Color the link of the application status check to red with no underliner.*/
+ a {
+     color: #ff8480;
+     text-decoration: none;
+     font-size: 14px;
+ }
 
-.red-text {
-    color: #FF8480;
-}
+ /* Change the footer background colour. Use padding and margin to stretch out the footer to the end */
+ footer {
+     background-color: #fffd8c;
+     padding: 1em 2em;
+     margin: 0 -1rem;
+ }
 
-/* Styling Footer */
+ /* Fix the size of the writing in the footer.  */
+ footer p{
+     font-size: 16px;
+ }
+ /* Adding the margin in the Green button and input to create space between the top and the bottom */
+ .calculation-form {
+     margin: 5px 0;
+ }
+ /* Design the 2 inputs in the footer by adding a background colour, no border,border radius, and a padding. The margin is to add space between each other */ 
 
-footer {
-    background: #FFFD8C;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    padding: 1.5rem;
+ .calculation-form input[type=text] {
+     background-color: #f7f7f7;
+     border: none;
+     border-radius: 10px;
+     padding: 1em;
+     margin: 0 5px 0 5px;
+ }
+ /* Adjust the width of the Hours input */
+ .calculation-form .hours{
+     width: 15%;
+ }
 
-}
+ /* Adjust the width of the City input */
+ .calculation-form .city{
+     width: 65%;
+ }
 
-.btn-calculate {
+ /* Add a background colour, border, border radius, width, and a padding to the Calculate button */
+.btn-calculate{
     background-color:#FF8480;
     font-family: montserrat, sans-serif;
     color: #F7F7FF;
@@ -139,35 +196,18 @@ footer {
     text-transform: uppercase;
     border-radius: 12px;
     border: none;
-    padding: 1px 2em;
+    padding: 5px auto;
     width: 100%;
-    margin-top: -10px;
-    margin-bottom: 10px;
 }
 
-/* Force Hours and City box stay inline */
-/* #calculation-form {
-    overflow-x: auto;
-    overflow-y: hidden;
+ /* Adding a CSS Flexbox to create space between social media icons. */
+ .social-media {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: 20px 0;
+ }
 
-}
-
-#calculation-form > .cal-box {
-    display: inline-block;
-} */
-
-#calculation-form .hours {
-    width: 40px;
-}
-
-
-/* Styling Social Media button */
-.social-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.social-media-icon {
+ .social-media-icon {
     width: 30px;
 }
