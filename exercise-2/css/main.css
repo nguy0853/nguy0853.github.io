@@ -363,7 +363,7 @@ footer p {
         background-size: 50%;
         display: grid;
         grid-template-columns: repeat(2, 2fr);
-        grid-template-rows: (1, 1fr);
+        /* grid-template-rows: (1, 1fr); */
         grid-template-areas: "content""cta-form";
 
     }
