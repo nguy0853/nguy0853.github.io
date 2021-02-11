@@ -151,7 +151,7 @@ a {
 footer {
     background-color: #fffd8c;
     padding: 1em 2em;
-    margin: 0 -1.5rem;
+    margin: -1em -1.5rem;
 }
 
 /* Fix the size of the writing in the footer.  */
@@ -221,7 +221,7 @@ footer p {
 /* ----------------------------------------
 ------------------------------------------- */
 /* Use CSS Media Queries for styling the tablet version. */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
 
     /* Fixi the font size of header 1 */
     h1 {
@@ -288,7 +288,7 @@ footer p {
 }
 
 /* Use CSS Media Queries for styling the desktop version. */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
     .main {
         margin: 0 250px;
     }
@@ -375,6 +375,7 @@ footer p {
         width: 60%;
         background-color: #F7F7FF;
         margin: 0 200px;
+
     }
 
     .content {
