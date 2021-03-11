@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation area -->
+    <header>
+        <div class="navigation">
+            <nav>
+                <img class="logo" src="images/logo.svg" alt="logo" width="88" height="54">
+                <ul class="menu-area">
+                    <li><a class="nav-link active" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Container contains everything exept footer. Main contains 4 sections-->
+        <div class="container">
+            <div class="main">
+                <div class="main-1">
+                    <div class="wrap-1">
+                        <h1>Discover your ARC.</h1>
+                        <p>With Algonquin College's newest facility, there's always something for everyone to discover
+                            and enjoy!</p>
+                    </div>
+                    <div class="icons">
+                        <div class="icons-1">
+                            <div class="bowling">
+                                <a><img src="icons/bowling.svg" alt="Bowling"></a>
+                                <p>Bowling</p>
+                            </div>
+                            <div class="climbing">
+                                <a><img src="icons/rock-climbing.svg" alt="Climbing"></a>
+                                <p>Climbing</p>
+                            </div>
+                        </div>
+                        <div class="icons-2">
+                            <div class="gym">
+                                <a><img src="icons/fitness.svg" alt="Fitness Center"></a>
+                                <p>Fitness Center</p>
+                            </div>
+                            <div class="basketball">
+                                <a><img src="icons/basketball.svg" alt="Indoor Court"></a>
+                                <p>Indoor Court</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Get Started button in top section of the page -->
+                    <div class="wrap-2">
+                        <input type="submit" onclick="window.location.href='contact.html'" value="Get Started"
+                            class="btn">
+                    </div>
+                </div>
+                <div class="rotate-in-2-bck-cw">
+                    <div class="girl-img">
+                        <img class="girl" src="./images/discover.svg" alt="girl">
+                    </div>
+                </div>
+                <!-- Main 2 contains school image and content -->
+                <div class="main-2">
+                    <div class="school-image">
+                        <picture>
+                            <source media="(max-width:768px)" srcset="images/school-700_x_300.jpg 700w,
+                            images/school-1100_x_300.jpg 1100w,
+                            images/school-2000_x_337.jpg 2000w" sizes="50vw">
+                            <source media="(min-width:1200px)" srcset="images/school-813_x_337.jpg 813w" sizes="100vw">
+                            <img src="images/school-1000_x_250.jpg" alt="school">
+                        </picture>
+                    </div>
+                    <!-- wrapper of text and learn more button -->
+                    <div class="main-wrap">
+                        <div class="wrap-4">
+                            <h2>Discover.</h2>
+                            <h3>Algonquin College</h3>
+                            <p>of Applied Arts and Technology is a publicly funded English-language college located in
+                                Ottawa, Ontario, Canada. The college serves the National Capital Region and the outlying
+                                areas of Eastern Ontario, Western Quebec, and Upstate New York.</p>
+                            <!-- button learn more -->
+                            <div class="learn">
+                                <div class="btn btn-animation-1">
+                                    <a href="https://www.algonquincollege.com/">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--wrapper that inludes picture of president and text  -->
+                <div class="main-3">
+                    <div class="president">
+                        <img class="president-image" src="./images/simon.jpg" alt="President">
+                        <div class="president-info">
+                            <h4>Dijanelle Simon</h4>
+                            <h4>SA President</h4>
+                        </div>
+                    </div>
+                    <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a
+                        greater number of students to participate in physical and social activity. The Students'
+                        Association is committed to and focused on programming that results in our students taking
+                        person ownership for their health."
+                    </p>
+                </div>
+                <!-- Wrapper that includes responsive images and text  -->
+                <div class="main-4">
+                    <div class="entertainment-image">
+                        <picture>
+                            <source media="(max-width:768px)" srcset="images/entertainment-700_x_300.jpg 700w,
+                    images/entertainment-1000_x_300.jpg 1000w" sizes="100vw">
+                            <source media="(min-width:1200px)" srcset="images/entertainment-813_x_337.jpg 813w"
+                                sizes="100vw">
+                            <img src="images/entertainment-1000_x_300.jpg" alt="entertainment">
+                        </picture>
+                    </div>
+                    <!-- text has own div too -->
+                    <div class="wrap-6">
+                        <h2>Discover.</h2>
+                        <h3>The entertainment</h3>
+                        <p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we
+                            host a variety of events. Now with the coming of the ARC facility, not only will it be
+                            providing
+                            more space for the students to study, but it will also be bringing in more room for
+                            late-night entertainment. </p>
+                        <div class="learn">
+                            <div class="btn btn-animation-2">
+                                <a href="https://www.algonquincollege.com/">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social-media">
+            <h3>Follow us</h3>
+            <div class="icons">
+                <a href="https://www.facebook.com"><img src="icons/facebook.svg" alt="facebook" width="50"
+                        height="50"></a>
+                <a href="https://www.instagram.com"><img src="icons/instagram.svg" alt="instagram" width="50"
+                        height="50"></a>
+                <a href="https://twitter.com/?lang=en"><img src="icons/twitter.svg" alt="twitter" width="50"
+                        height="50"></a>
+                <a href="https://www.youtube.com"><img src="icons/youtube.svg" alt="youtube" width="60" height="50"></a>
+            </div>
+        </div>
+        <!-- back to top -->
+        <div class="top">
+            <div class="arrow">
+                <a href="#">
+                    <img src="icons/arrow.svg" alt="arrow">
+                    <p>back to top</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
