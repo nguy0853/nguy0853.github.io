@@ -28,11 +28,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+.contact-container .contact-content .contact-icon img{
+    width: 100%;
+}
 body {
 	line-height: 1;
 }
 ol, ul {
 	list-style: none;
+    padding-bottom: 20px;
 }
 blockquote, q {
 	quotes: none;
@@ -45,6 +49,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 *,
@@ -88,6 +95,7 @@ body {
 /* Apply the position for navigation bar */
 .navigation li {
     display: block;
+    margin: 10px 0;
 }
 
 nav a {
@@ -452,9 +460,12 @@ footer {
     height: 200px;
     width: 100%;
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     text-align: center;
     color: #f2f2f2;
+    background-attachment: fixed;
+    background-position:center;
 }
 
 /* centered text on image */
@@ -757,7 +768,12 @@ textarea#message {
         justify-content: center;
 
     }
-
+   .container .page-banner{
+        flex-direction: column;
+    }
+    .contact-container .contact-content .contact-icon img{
+        width: 50%;
+    }
     /* Style NAVIGATION */
     .menu-area a {
         padding: 0 25px;
@@ -821,12 +837,15 @@ textarea#message {
         justify-content: center;
         flex-direction: column;
         margin: 3rem 0 3rem 0;
-        animation-duration: 5s;
+        /* animation-duration: 5s;
         animation-name: bounceIn;
         animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
+        animation-iteration-count: infinite; */
     }
-
+    .scroll  img{
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
 
     @keyframes bounceIn {
         0% {
@@ -1017,6 +1036,7 @@ textarea {
     width: 100%;
     height: 60vh;
 }
+}
 
 
 /* ----------DESKTOP------------ */
@@ -1028,22 +1048,118 @@ textarea {
         margin: 0 auto;
         padding: 8rem;
     } */
+    .about-content-2{
+        max-width: 1440px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    }
     .container div{
         margin: 0 auto;
         padding: 0 2rem;
     }
-    
+    .about-container .about-main .about-main-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }  
+    .about-container .about-main .about-main-1 .about-content-1{
+        flex-basis: 50%;
+    } 
+    .about-container .about-main .about-main-1 .construction{
+        flex-basis: 50%;
+    } 
+    .about-container .about-main .about-main-1 .construction img{
+        width: 100%;
     }
-    .page-banner {
+    .contact-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .contact-container .contact-content{
+        flex-basis: 40%;
+    }
+    .contact-text h1{
+        font-size: 3.5em;
+        line-height: 3.5rem
+    }
+    .contact-info{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+    .contact-info .info-text{
+        flex-basis: 50%;
+    }
+    .contact-info .map{
+        flex-basis: 50%;
+    }
+    .contact-container .contact-content .contact-icon img{
+        width: 100%;
+    }
+    .contact-container .contact-form{
+        flex-basis: 30%;
+    }
+    .container .page-banner {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+    }
+    .content-1 h1{
+        font-size: 5.5em;
+        line-height: 1em;
+        width: unset;
+    }
+    .content-1 p{
+        padding: 50px 0;
+    }
+    .container  .btn-1{
+        display: block;
+        margin-top: 50px;
+    }
+    .container .learn {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .container .president-text{
+        display: flex;
+        align-items: center;
+    }
+    .main-2 .school-image  {
+        height: 350px;
+        width: 75%;
+    }
+    .main-2 .school-image  img{
+        height: 350px;
+    }
+    .entertainment-image  {
+        display: block;
+        width: 75%;
+
+    }
+    .entertainment-image img{
+        height: 350px;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    .social-media .icons{
+        justify-content: center;
+    }
+    .learn .btn{
+        float: unset;
+        background-color: #26a682;
+        height: unset;
+        border-radius: 22px;
+        width: unset;
+        margin: unset;
     }
     .main-1{
         max-width: 45%;
         padding-right: 2rem;
         justify-content: space-around;
     }
+   
      /* Set Girl image size */
      .girl-img img {
         width: 100%;
