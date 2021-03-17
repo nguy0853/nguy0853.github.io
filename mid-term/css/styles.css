@@ -103,12 +103,12 @@ nav a {
 }
 
 /* Style the logo in nav bar */
-.navigation img {
+.navigation .logo {
     position: relative;
     margin: 0 auto;
     text-align: center;
     display: block;
-    width: 88px;
+    max-width: 88px;
 
 }
 
@@ -307,7 +307,7 @@ h3 {
     font-size: 1.2rem;
     font-weight: bold;
     color: #f2f2f2;
-    padding: 0 auto;
+    padding: 0;
 }
 
 .learn .btn:hover {
@@ -347,7 +347,7 @@ h3 {
 /* Set fontsize for main-3 h4 */
 .main-3 h4 {
     font-size: 1.5rem;
-    font-weight: 550;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -601,7 +601,7 @@ input.sub [type=submit] {
 
 /* Container for page except the Footer and Nav bar */
 .contact-container {
-    padding: 1.8rem;
+    padding: 2rem;
 }
 
 /* IMAGE OF CONTACT US ICONS */
@@ -704,6 +704,12 @@ textarea#message {
     line-height: 3rem;
 }
 
+.contact-form h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
 .info-text h3 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -754,9 +760,8 @@ textarea#message {
 
     /* Style NAVIGATION */
     .menu-area a {
-        color: #fff;
         padding: 0 25px;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 30px;
         position: relative;
     }
@@ -778,7 +783,7 @@ textarea#message {
     .navigation nav img {
         justify-self: start;
         margin: 0;
-        margin-left: 80px;
+        margin-left: 2rem;
     }
 
     /* PADDING FOR CONTENT-1 WRAP */
@@ -951,12 +956,13 @@ textarea#message {
 
 
 /* CONTACT PAGE */
+
 input[type=text],
 select,
 textarea {
     width: 100%;
     padding: 14px;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0;
     border-radius: 25px;
     font-size: 1.2rem;
     background-color: #f2f2f2;
@@ -1012,35 +1018,58 @@ textarea {
     height: 60vh;
 }
 
+
 /* ----------DESKTOP------------ */
 @media only screen and (min-width:1200px) {
 
     /* HOME PAGE */
 
-    .container {
+    /* .container {
+        margin: 0 auto;
+        padding: 8rem;
+    } */
+    .container div{
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    
+    }
+    .page-banner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .main-1{
+        max-width: 45%;
+        padding-right: 2rem;
+        justify-content: space-around;
+    }
+     /* Set Girl image size */
+     .girl-img img {
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(24, 1fr);
-        grid-template-rows: 1fr;
-        padding: 5rem 5rem 0 5rem;
+        height: auto
     }
 
-    /*FIRST WRAP  */
+
+    /* FIRST WRAP 
     .content-1 {
         padding: 0;
-    }
+    } */
 
     /* LEFT CONTENT OF GRID IN THE BANNER */
-    .main-1 {
+    /* .main-1 {
         grid-column: 1 / span 11;
         grid-row: 1;
 
-    }
+    } */
 
     /*  4 ICONS IN BANNER */
     .icons {
-        margin: 2rem 0 2rem 0;
-        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        /* margin: 2rem 0 2rem 0;
+        padding: 0; */
 
     }
 
@@ -1058,19 +1087,6 @@ textarea {
         margin: 10px;
     }
 
-    /* Set Girl image size */
-    .girl-img img {
-        width: 100%;
-        height: auto
-
-    }
-
-    /* PLACING IMAGE OF THE GIRL IN RIGHT SIDE OF THE GRID */
-    .girl-img {
-        grid-column: 13/ span 20;
-        grid-row: 1;
-    }
-
     /* SCROLL DOWN BUTTON */
     .scroll img {
         display: flex;
@@ -1078,14 +1094,13 @@ textarea {
         text-align: center;
         align-items: center;
         margin: 0;
-        height: 3rem;
+        height: 2rem;
     }
 
     /* LOGO  */
-    .navigation img {
-        margin: 0;
-        display: inline;
-        margin-top: 20px;
+    .navigation .logo {
+        width: 150px;
+
     }
 
     /* NAV BAR APPLYING MARGIN */
@@ -1095,17 +1110,14 @@ textarea {
 
     /*  GRID FOR MAIN-2 */
     .main-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: row;
         background-color: #f2f2f2;
         align-items: center;
-
     }
-
-    /*  GRID FOR 2 MAIN WRAP */
     .main-4 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: row-reverse;
         background-color: #f2f2f2;
         align-items: center;
     }
@@ -1163,5 +1175,4 @@ textarea {
         display: flex;
         flex-direction: column;
     }
-
-   
+}
