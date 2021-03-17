@@ -1,0 +1,1167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 35px;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.active {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* --------------------------------
+    Custom Styles - Mobile first
+------------------------------------ */ 
+
+/* Style Navigation bar*/
+.navigation {
+    background-color: #3c3b3a;
+
+}
+
+/* Apply the position for navigation bar */
+.navigation li {
+    display: block;
+}
+
+nav a {
+    height: 7vh;
+    text-decoration: none;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+/* Style the logo in nav bar */
+.navigation img {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 88px;
+
+}
+
+nav .nav-link:active {
+    font-weight: bold;
+}
+
+/* Style Homepage typo  */
+.content-1 {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.content-1 p {
+    width: 90%;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #3c3b3a;
+}
+
+.content-1 h1 {
+    font-size: 2.5rem;
+    color: #3c3b3a;
+    font-weight: 600;
+    width: 90%;
+    line-height: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Position 4 icons in the header */
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styling each */
+.bowling,
+.climbing,
+.gym,
+.basketball {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #26a682;
+    text-decoration: none;
+}
+
+/* Wrap 2 icons inline  */
+.icons .icons-1,
+.icons .icons-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+/* Style the Get Started button */
+
+.btn-1{
+    padding: 0.5rem 2rem ;
+}
+.btn-1 input[type=submit] {
+    background-color: #26a682;
+    color: #f2f2f2;
+    border: none;
+    height: 2.9rem;
+    border-radius: 24px;
+    width: 90%;
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    margin: 1rem auto;
+    box-shadow: 0 9px 15px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.btn-1 input[type=submit]:hover {
+
+    animation: gradient 2.5s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) forwards;
+}
+
+@keyframes gradient {
+    0% {
+        background: linear-gradient(90deg, #69bba9 0%, #353538 100%)
+    }
+
+    10% {
+        background: linear-gradient(90deg, #d2ffee 0%, #304d3b 100%)
+    }
+
+    20% {
+        background: linear-gradient(90deg, rgb(214, 193, 146) 0%, rgb(24, 48, 40) 100%)
+    }
+
+    30% {
+        background: linear-gradient(90deg, rgb(197, 174, 124) 0%, rgb(140, 223, 224) 100%)
+    }
+
+    40% {
+        background: linear-gradient(90deg, #88e988 0%, #64ac93 100%)
+    }
+
+    50% {
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%)
+    }
+
+    60% {
+        background: linear-gradient(90deg, #8fbd9d 0%, #8febc0 100%)
+    }
+
+    70% {
+        background: linear-gradient(90deg, rgb(146, 138, 184) 0%, #A8C0FF 100%)
+    }
+
+    80% {
+        background: linear-gradient(90deg, rgb(95, 114, 104) 0%, rgb(146, 158, 223) 100%)
+    }
+
+    90% {
+        background: linear-gradient(90deg, #b7c3df 0%, #51648a 100%)
+    }
+
+    100% {
+        background: linear-gradient(90deg, #425e47 0%, #638563 100%)
+    }
+}
+
+/* No display the Scroll button on mobile screen */
+.scroll {
+    display: none;
+}
+
+
+/* Style the girl image  */
+.girl-img img {
+    width: 90%;
+    height: 30%;
+    padding: 2rem 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Style the main-2 school image */
+.main-2 .school-image picture img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Set up Main 2-4 padding */
+
+.main-2 .content-2,
+.main-4 .content-4 {
+    padding: 1.5rem 2rem;
+}
+
+/* Apply fontsize for  Discover part */
+.main-2 .content-2 p,
+.main-4 .content-4 p {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #26A682;
+}
+
+/* Style 2 Learn more buttons */
+
+.learn .btn {
+    float: right;
+    background-color: #26a682;
+    border: none;
+    height: 2.5rem;
+    border-radius: 22px;
+    width: 9rem;
+    box-shadow: 0 9px 15px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.learn .btn a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f2f2f2;
+    padding: 0 auto;
+}
+
+.learn .btn:hover {
+    transform: scale(1.2);
+    background: #3c3b3a;
+}
+
+
+
+/*  Style main 3 section : president image and text */
+.main-3 {
+    background-color: #3c3b3a;
+    color: #f2f2f2;
+    line-height: 2.5rem;
+    padding: 1rem 2rem;
+    font-weight: 200;
+}
+
+/* WRAPPED IMAGE OF PRESIDENT AND H4 */
+.main-3 .content-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMAGE OF PRESIDENT DISPLAYED BLOCK */
+.main-3 .president-image {
+    height: 10rem;
+    width: 10rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 90px;
+    border: 4px solid #f2f2f2;
+    margin-bottom: 1rem;
+}
+
+
+/* Set fontsize for main-3 h4 */
+.main-3 h4 {
+    font-size: 1.5rem;
+    font-weight: 550;
+    text-align: center;
+}
+
+/* adding margin bottom for main 2 main 4 */
+.main-2,
+.main-4 {
+    margin-bottom: 2.5rem;
+}
+
+/* FOOTER HEIGHT */
+footer {
+    background-color: #3c3b3a;
+    color: #f2f2f2;
+    height: 9rem;
+}
+
+/* PARAGRAPH SETTINGS IN FOOTER */
+.social-media h3 {
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+/* SOCIAL MEDIA ICONS IN FOOTER*/
+.icons {
+    display: flex;
+    justify-content: center;
+    padding: 0.2rem 0 0 0;
+}
+
+/* SET UP PADDING FOR EACH ICON INDIVIDUALLY */
+.icons img {
+    padding: 0 0.5rem;
+}
+
+/* BACK TO TOP ARROW */
+.top .arrow {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* APPLYING POSITION FOR NAV BAR */
+.arrow p {
+    color: #f2f2f2;
+    font-size: 0.56rem;
+    font-weight: 200;
+    text-align: center;
+    text-decoration: none;
+}
+
+.arrow img {
+    width: 22px;
+    height: 22px;
+    justify-content: center;
+}
+
+.arrow a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+
+/* --------------------------------
+    Custom Styles - Mobile first
+    ABOUT ABOUT ABOUT ABOUT ABOUT
+------------------------------------ */ 
+.about-main-1,
+.about-content-2,
+.about-content-3 {
+    padding: 2rem;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: #3c3b3a;
+}
+
+/* H1 IN FIRST WRAP*/
+.about-content-1 h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #3c3b3a;
+    padding-bottom: 0.5rem;
+}
+
+/* Construction img */
+.construction {
+    display: flex;
+    justify-content: center;
+}
+
+.construction img {
+    width: 18rem;
+}
+
+/* About section banner */
+.about-banner-2 {
+    background-image: url('../images/about-375_x_200.jpg');
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+/* centered text on image */
+.about-banner-2 h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* Services section banner */
+.about-banner-3 {
+    background-image: url('../images/coffee-375_x_200.jpg');
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.about-banner-3 h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* Style heading in content 2 - 3*/
+.about-content-2 h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    padding: 0.5rem 0;
+}
+
+/* BACKGROUND COLOR FOR BOX-3*/
+.about-content-2 {
+    background-color: #f2f2f2;
+}
+
+.about-content-2 p {
+    font-size: 1rem;
+}
+
+
+/* SUBSCRIBE DIV BACKGROUND COLOUR */
+.subscribe {
+    background-color: #3c3b3a;
+    color: #f2f2f2;
+    height: 7.5rem;
+    text-align: center;
+    padding-top: 0.8rem;
+
+}
+
+/* SUBSCRIBE BUTTON IN DIV*/
+.subscribe button {
+    background-color: #26a682;
+    color: #f2f2f2;
+    border: none;
+    height: 2rem;
+    border-radius: 22px;
+    width: 9rem;
+    text-align: center;
+
+}
+
+/* SETTINGS FOR SUBSCRIBE BUTTON */
+input.sub [type=submit] {
+    background-color: #26a682;
+    color: #f2f2f2;
+    border: none;
+    height: 2.9rem;
+    border-radius: 24px;
+    width: 90%;
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 9px 15px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* TEXT IN SUBSCRIBE DIV*/
+.subscrive-text {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f2f2f2;
+}
+
+.subscribe button:hover {
+    background: #69bba9;
+    transform: scale(1.1);
+
+}
+
+
+/* GREEN TEXT  */
+.green-1,
+.green-2,
+.green-3,
+.green-4 {
+    font-size: 1.5rem;
+    color: #26a682;
+}
+
+/* WRAP THE SPONSOR ICONS*/
+.about-icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2.3rem;
+}
+
+/* SET UP PADDING FOR EACH SPONSOR LOGO  */
+.about-icons img {
+    padding-top: 1.8rem;
+}
+
+
+/* HEADING IN SPONSOR LOGO WRAP */
+
+.thanks h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #3c3b3a;
+}
+/* --------------------------------
+    Custom Styles - Mobile first
+    CONTACT CONTACT CONTACT CONTACT
+------------------------------------ */
+
+
+/* Container for page except the Footer and Nav bar */
+.contact-container {
+    padding: 1.8rem;
+}
+
+/* IMAGE OF CONTACT US ICONS */
+.contact-icon img {
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.contact-icon {
+    width: 100%;
+    display: flex;
+}
+
+
+/* STYLE CONTACT FORM */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #adabab;
+    letter-spacing: 0.5px;
+    background-color: #f2f2f2;
+
+}
+
+#firstname,
+#studentnumber,
+#email,
+#message {
+    padding-left: 1rem;
+    font-family: 'Raleway';
+}
+
+
+
+.submit input[type=submit] {
+    background-color: #3c3b3a;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 4px;
+    margin-bottom: 1rem;
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.13);
+
+}
+
+/* LABELS IS CONTACT FORM*/
+.contact-form label {
+    margin: 3px;
+    color: #f2f2f2;
+    font-weight: 200;
+}
+
+/* WRAP FOR CONTACT FORM*/
+.contact-form {
+    border-radius: 1rem;
+    border: none;
+    padding: 20px;
+    margin-bottom: 3rem;
+    background-color: #26a682;
+    font-family: 'Raleway';
+    box-shadow: 0 9px 15px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* H1 IN CONTACT FORM */
+.contact h1 {
+    color: #f2f2f2;
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+/* HEIGHT OF TEXTAREA IN CONTACT FORM */
+textarea#message {
+    height: 7rem;
+    font-family: 'Raleway';
+}
+
+/* WRAP OF CONTACT INFO */
+.info-text {
+    padding: 0 2rem;
+}
+.contact-text h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #3c3b3a;
+    padding-bottom: 1rem;
+    width: 80%;
+    line-height: 3rem;
+}
+
+.info-text h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 80%;
+    line-height: 1.8rem;
+    color: #3c3b3a;
+}
+
+/* WRAP OF CONTACT INFO H2 */
+.info-text h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: #3c3b3a;
+    text-decoration: none;
+}
+
+.info-text p {
+    line-height: 2.2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 80%;
+    padding-top: 0.8rem;
+}
+
+/* MAP */
+.map iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+/* --------------------------------
+    Custom Styles - TABLET
+------------------------------------ */ 
+
+@media only screen and (min-width: 768px) {
+
+    /* HOME PAGE tablet styling*/
+
+
+    /* 4 SMALL ICONS IN HEADER */
+    .icons {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+    }
+
+    /* Style NAVIGATION */
+    .menu-area a {
+        color: #fff;
+        padding: 0 25px;
+        font-size: 16px;
+        line-height: 30px;
+        position: relative;
+    }
+
+    .navigation nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+
+    /* NAVIGATION wrap */
+    .menu-area {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /* NAVIGATION logo */
+    .navigation nav img {
+        justify-self: start;
+        margin: 0;
+        margin-left: 80px;
+    }
+
+    /* PADDING FOR CONTENT-1 WRAP */
+    .content-1 {
+        padding: 4rem 4rem 0 4rem;
+
+    }
+
+    /* PADDING FOR CONTENT-2 AND 4 */
+    .content-2,
+    .content-4 {
+        padding: 4rem;
+    }
+
+    /* ICONS IN HEADER */
+    .bowling,
+    .climbing,
+    .gym,
+    .basketball {
+        padding: 20px;
+        margin: 20px;
+        font-size: 1rem;
+        color: #26a682;
+        text-decoration: none;
+    }
+
+    /* SCROLL DOWN BUTTON PARAGRAPH */
+    .scroll p {
+        text-align: center;
+    }
+
+    /* SCROLL DOWN BUTTON*/
+    .scroll {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 3rem 0 3rem 0;
+        animation-duration: 5s;
+        animation-name: bounceIn;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+
+
+    @keyframes bounceIn {
+        0% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+
+        60% {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .scroll img {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        height: 2rem;
+    }
+
+
+    /* HEADING IN FIRST WRAP */
+
+    .content-1 h1 {
+        font-size: 4.3rem;
+        width: 80%;
+        line-height: 5rem;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .content p {
+        width: 90%;
+        font-size: 1.3rem;
+    }
+
+    /* BUTTON*/
+    .btn-1 input[type=submit] {
+
+        height: 4rem;
+        border-radius: 35px;
+        width: 19rem;
+        font-size: 2.5rem;
+    }
+
+
+    /* learn more buttons */
+    .btn {
+        height: 2.8rem;
+        width: 14rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+
+    }
+
+    /* style the girl img */
+    .girl-img img {
+        width: 50%;
+        height: 20%;
+        padding: 2rem 0 1.2rem 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Resize the heading font of Content-2 & 4  */
+    .content-2 h2,
+    .content-4 h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    .content-2 h3,
+    .content-4 h3 {
+        color: #26a682;
+    }
+
+    /* WIDTH OF H2 IN main-3 */
+    .content-3 h4 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    /* PHOTO OF PRESIDENT */
+    .main-3 {
+        padding: 2.5rem;
+    }
+
+    /* FLEXBOX FOR main-3 */
+
+    .main-3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    /* FLEXBOX FOR PRESIDENT IMAGE AND TEXT */
+    .main-3 .content-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+    } 
+
+
+    /* President TEXT */
+
+    .president-info p {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        margin: 2rem;
+    }
+
+
+    .content-2 h4,
+    .content-4 h4 {
+        font-size: 2rem;
+    }
+
+/* -----------About Tablet--------- */
+
+
+/* CONTACT PAGE */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 1rem 0 1rem 0;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    background-color: #f2f2f2;
+}
+
+/* sTYLE CONTACT FORM */
+.contact label {
+    margin: 3px;
+    color: #f2f2f2;
+    font-weight: 200;
+}
+
+.submit input[type=submit] {
+    border-radius: 28px;
+    width: 40%;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 8px;
+    margin-bottom: 1rem;
+    height: 4rem;
+}
+
+/* SUBMIT BUTTON IN CONTACT FORM */
+.submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Style the heading and paragraph in Map info */
+.info-text h2 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    padding: 1.5rem 0 2rem 0;
+}
+
+.info-text h3 {
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+    width: 80%;
+}
+
+.info-text p {
+    line-height: 2.3rem;
+    font-size: 1.2rem;
+    width: 45%;
+    margin-bottom: 2rem;
+}
+
+/* Set the width of Map */
+.map iframe {
+    width: 100%;
+    height: 60vh;
+}
+
+/* ----------DESKTOP------------ */
+@media only screen and (min-width:1200px) {
+
+    /* HOME PAGE */
+
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(24, 1fr);
+        grid-template-rows: 1fr;
+        padding: 5rem 5rem 0 5rem;
+    }
+
+    /*FIRST WRAP  */
+    .content-1 {
+        padding: 0;
+    }
+
+    /* LEFT CONTENT OF GRID IN THE BANNER */
+    .main-1 {
+        grid-column: 1 / span 11;
+        grid-row: 1;
+
+    }
+
+    /*  4 ICONS IN BANNER */
+    .icons {
+        margin: 2rem 0 2rem 0;
+        padding: 0;
+
+    }
+
+    /* Set the margin for Submit button  */
+    .btn-1 input[type=submit] {
+        margin: 0;
+    }
+
+    /* APPLYING PADDING MARGIN TO 4 ICONS IN BANNER */
+    .bowling,
+    .climbing,
+    .gym,
+    .basketball {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    /* Set Girl image size */
+    .girl-img img {
+        width: 100%;
+        height: auto
+
+    }
+
+    /* PLACING IMAGE OF THE GIRL IN RIGHT SIDE OF THE GRID */
+    .girl-img {
+        grid-column: 13/ span 20;
+        grid-row: 1;
+    }
+
+    /* SCROLL DOWN BUTTON */
+    .scroll img {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        height: 3rem;
+    }
+
+    /* LOGO  */
+    .navigation img {
+        margin: 0;
+        display: inline;
+        margin-top: 20px;
+    }
+
+    /* NAV BAR APPLYING MARGIN */
+    .menu-area {
+        margin-right: 50px;
+    }
+
+    /*  GRID FOR MAIN-2 */
+    .main-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #f2f2f2;
+        align-items: center;
+
+    }
+
+    /*  GRID FOR 2 MAIN WRAP */
+    .main-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #f2f2f2;
+        align-items: center;
+    }
+
+    /*  SWITCHING ORDER OF CONTENT */
+    .main-4 .entertainment-image {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    /*PADDING FOR TEAM IMAGE */
+
+    .school-image picture img {
+        padding-left: 4rem;
+    }
+
+    /*PADDING FOR BEER IMAGE */
+    .entertainment-image picture img {
+        padding-right: 4rem;
+
+    }
+
+    .content-2 {
+        padding: 2rem 4rem 2rem 1rem;
+    }
+
+    /*PADDING FOR TEAM IMAGE */
+    /* WRAP OF PRESIDENT AND TEXT  */
+    .main-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* IMAGE OF PRESIDENT */
+    .main-3 .content-3 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+        grid-column-gap: 3rem;
+    }
+
+    /*ADDING MARGIN FOR WRAP THAT INCLUDES IMAGE OF PRESIDENT AND H2 */
+    .main-3 .president-image {
+        margin: 2rem;
+    }
+
+    /* Set margin for paragraph in main-3 */
+    .main-3 p {
+        margin: auto 0 auto 7rem;
+    }
+
+    /* CHANGING FLEX DIRECTION TO COLUMN */
+    .main-3 h2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+   
