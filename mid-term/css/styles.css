@@ -178,7 +178,6 @@ nav .nav-link:active {
     justify-content: space-around;
 }
 
-
 /* Style the Get Started button */
 
 .btn-1{
@@ -255,7 +254,6 @@ nav .nav-link:active {
     display: none;
 }
 
-
 /* Style the girl image  */
 .girl-img img {
     width: 90%;
@@ -275,7 +273,6 @@ nav .nav-link:active {
 }
 
 /* Set up Main 2-4 padding */
-
 .main-2 .content-2,
 .main-4 .content-4 {
     padding: 1.5rem 2rem;
@@ -299,7 +296,6 @@ h3 {
 }
 
 /* Style 2 Learn more buttons */
-
 .learn .btn {
     float: right;
     background-color: #26a682;
@@ -322,8 +318,6 @@ h3 {
     transform: scale(1.2);
     background: #3c3b3a;
 }
-
-
 
 /*  Style main 3 section : president image and text */
 .main-3 {
@@ -420,7 +414,6 @@ footer {
     flex-direction: column;
     text-decoration: none;
 }
-
 
 /* --------------------------------
     Custom Styles - Mobile first
@@ -536,7 +529,6 @@ footer {
     border-radius: 22px;
     width: 9rem;
     text-align: center;
-
 }
 
 /* SETTINGS FOR SUBSCRIBE BUTTON */
@@ -568,7 +560,6 @@ input.sub [type=submit] {
     transform: scale(1.1);
 
 }
-
 
 /* GREEN TEXT  */
 .green-1,
@@ -626,7 +617,6 @@ input.sub [type=submit] {
     display: flex;
 }
 
-
 /* STYLE CONTACT FORM */
 input[type=text],
 select,
@@ -652,8 +642,6 @@ textarea {
     padding-left: 1rem;
     font-family: 'Raleway';
 }
-
-
 
 .submit input[type=submit] {
     background-color: #3c3b3a;
@@ -837,10 +825,6 @@ textarea#message {
         justify-content: center;
         flex-direction: column;
         margin: 3rem 0 3rem 0;
-        /* animation-duration: 5s;
-        animation-name: bounceIn;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite; */
     }
     .scroll  img{
         transform: rotate(180deg);
@@ -1038,16 +1022,11 @@ textarea {
 }
 }
 
-
 /* ----------DESKTOP------------ */
 @media only screen and (min-width:1200px) {
 
     /* HOME PAGE */
 
-    /* .container {
-        margin: 0 auto;
-        padding: 8rem;
-    } */
     .about-content-2{
         max-width: 1440px;
         margin: 0 auto;
@@ -1165,19 +1144,6 @@ textarea {
         width: 100%;
         height: auto
     }
-
-
-    /* FIRST WRAP 
-    .content-1 {
-        padding: 0;
-    } */
-
-    /* LEFT CONTENT OF GRID IN THE BANNER */
-    /* .main-1 {
-        grid-column: 1 / span 11;
-        grid-row: 1;
-
-    } */
 
     /*  4 ICONS IN BANNER */
     .icons {
