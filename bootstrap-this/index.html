@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" type="image/jpg" href="images/bootstrap-logo.svg"/>
+  <link rel="shortcut icon" type="image/jpg" href="images/bootstrap-logo.svg" />
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -64,17 +64,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Instruction</a>
+              <a class="nav-link" aria-current="page" href="#about">About</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Why Bootstrap?
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Features</a></li>
-                <li><a class="dropdown-item" href="#">Benefits</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#instruction">Instruction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#examples">Examples</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -103,17 +99,19 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-7 col-lg-5">
-        <img src="../images/icons-hero.png" class="img-fluid" alt="icons-hero">
+        <img src="images/icons-hero.png" class="img-fluid" alt="icons-hero">
       </div>
     </div>
     <!-- End About -->
     <hr class="mb-5">
     <!-- === Why Bootstrap? === -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h3 class="display-4">Why Bootstrap?</h3>
-        <p class="lead">Using Bootstrap will save you a considerable amount of time.</p>
-        <h6 class="alert alert-warning text-center">Check some amazing advantages below</h6>
+    <div id="about">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h3 class="display-4">Why Bootstrap?</h3>
+          <p class="lead">Using Bootstrap will save you a considerable amount of time.</p>
+          <h6 class="alert alert-warning text-center">Check some amazing advantages below</h6>
+        </div>
       </div>
     </div>
     <br>
@@ -127,7 +125,8 @@
             <div class="card-body flex-fill">
               <h5 class="card-title">The Powerful Grid System</h5>
               <p class="card-text text-wrap">It helps in scaling a single website design from the smallest mobile device
-                to high-definition displays, logically dividing the screen into 12 columns, so that you can decide just how
+                to high-definition displays, logically dividing the screen into 12 columns, so that you can decide just
+                how
                 much screen real estate each element of your design should take up.</p>
               <a href="#" class="btn btn-primary">Read More</a>
             </div>
@@ -141,7 +140,8 @@
             <div class="card-body flex-fill">
               <h5 class="card-title">Open Source</h5>
               <p class="card-text text-wrap">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.
-                Quickly prototype or build an entire app with Sass variables and mixins, responsive grid system, extensive
+                Quickly prototype or build an entire app with Sass variables and mixins, responsive grid system,
+                extensive
                 prebuilt components, and powerful plugins built on jQuery.</p>
               <a href="#" class="btn btn-primary">Read More</a>
             </div>
@@ -155,7 +155,8 @@
             <div class="card-body flex-fill">
               <h5 class="card-title">Browser Compatibility</h5>
               <p class="card-text text-wrap">Bootstrap is compatible with the latest, stable releases of all major
-                browsers and platforms. If Bootstrap’s instructions are followed properly, you can create a website design that works
+                browsers and platforms. If Bootstrap’s instructions are followed properly, you can create a website
+                design that works
                 in all these browsers.</p>
               <a href="#" class="btn btn-primary">Read More</a>
             </div>
@@ -213,95 +214,102 @@
     <!-- End Why Bootstrap -->
     <hr class="mb-5">
     <!-- === Instructions === -->
-    <div>
-      <h2>Intructions</h2>
+    <div id="instruction">
+      <h2>Intruction</h2>
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h3 class="display-4">How to use Bootstrap?</h3>
-          <p class="lead">In order to use Bootstrap CSS, you need to integrate it into your development environment. To do that, you simply need to create a folder on your computer. In that folder, save your compiled CSS and JS files and a new HTML file where you’ll load Bootstrap. Then you can use Bootstrap templates to add interface elements to the page.</p>
+          <p class="lead">In order to use Bootstrap CSS, you need to integrate it into your development environment. To
+            do that, you simply need to create a folder on your computer. In that folder, save your compiled CSS and JS
+            files and a new HTML file where you’ll load Bootstrap. Then you can use Bootstrap templates to add interface
+            elements to the page.</p>
         </div>
       </div>
       <h4 class="text-success">Loading Bootstrap CSS and JS</h4>
-      <p>First, create a folder on your computer called “bootstrap” then create another file and name it index.html. Go to Bootstrap’s official site then copy and paste the basic HTML template provided into the file or code it from scratch.</p>
+      <p>First, create a folder on your computer called “bootstrap” then create another file and name it index.html. Go
+        to Bootstrap’s official site then copy and paste the basic HTML template provided into the file or code it from
+        scratch.</p>
       <h4 class="text-success">Building a Basic Template</h4>
-      <p>To continue building this page, you can add a navigation bar, header, footer, glyphicon font, favicon, and other interface components by looking for the class name in the Docs category on Bootstrap’s official site. </p>
+      <p>To continue building this page, you can add a navigation bar, header, footer, glyphicon font, favicon, and
+        other interface components by looking for the class name in the Docs category on Bootstrap’s official site. </p>
 
     </div>
     <!-- End Instructions -->
     <hr class="mb-5">
     <!-- === Examples === -->
-    <h2>Examples</h2>
-    <br>
-    <h4 class="text-success">1. Colors, Badges and Buttons</h4>
-    <div class="container">
-      <div class="pt-4">
-        <h1>Example heading <span class="badge bg-gold">New</span></h1>
-        <h2>Example heading <span class="badge bg-pico">New</span></h2>
-        <h3>Example heading <span class="badge bg-purle">New</span></h3>
-        <h4>Example heading <span class="badge bg-red">New</span></h4>
-        <h5>Example heading <span class="badge bg-naval">New</span></h5>
-        <h6>Example heading <span class="badge bg-dupain">New</span></h6>
-        <h6>Example heading <span class="badge bg-waterfall">New</span></h6>
-        <h6>Example heading <span class="badge bg-pearl">New</span></h6>
+    <div id="examples">
+      <h2>Examples</h2>
+      <br>
+      <h4 class="text-success">1. Colors, Badges and Buttons</h4>
+      <div class="container">
+        <div class="pt-4">
+          <h1>Example heading <span class="badge bg-gold">New</span></h1>
+          <h2>Example heading <span class="badge bg-pico">New</span></h2>
+          <h3>Example heading <span class="badge bg-purle">New</span></h3>
+          <h4>Example heading <span class="badge bg-red">New</span></h4>
+          <h5>Example heading <span class="badge bg-naval">New</span></h5>
+          <h6>Example heading <span class="badge bg-dupain">New</span></h6>
+          <h6>Example heading <span class="badge bg-waterfall">New</span></h6>
+          <h6>Example heading <span class="badge bg-pearl">New</span></h6>
+        </div>
+        <div class="pt-4">
+          <span class="badge rounded-pill bg-gold">Gold</span>
+          <span class="badge rounded-pill bg-pico">Pico</span>
+          <span class="badge rounded-pill bg-purle">Purle</span>
+          <span class="badge rounded-pill bg-red">Red</span>
+          <span class="badge rounded-pill bg-naval">Naval</span>
+          <span class="badge rounded-pill bg-dupain">Dupain</span>
+          <span class="badge rounded-pill bg-waterfall">Waterfall</span>
+          <span class="badge rounded-pill bg-pearl">Pearl</span>
+        </div>
+        <div class="pt-4">
+          <span class="badge  bg-gold">Gold</span>
+          <span class="badge  bg-pico">Pico</span>
+          <span class="badge bg-purle">Purle</span>
+          <span class="badge bg-red">Red</span>
+          <span class="badge bg-naval">Naval</span>
+          <span class="badge bg-dupain">Dupain</span>
+          <span class="badge bg-waterfall">Waterfall</span>
+          <span class="badge bg-pearl">Pearl</span>
+        </div>
+        <div class="pt-4">
+          <button type="button" class="btn btn-primary">
+            Notifications <span class="badge bg-gold">4</span>
+          </button>
+          <button type="button" class="btn btn-secondary">Secondary <span class="badge bg-gold">4</span></button>
+          <button type="button" class="btn btn-success">Success <span class="badge bg-pico">4</span></button>
+          <button type="button" class="btn btn-danger">Danger <span class="badge bg-purle">4</span></button>
+          <button type="button" class="btn btn-warning">Warning <span class="badge bg-red">4</span></button>
+          <button type="button" class="btn btn-info">Info <span class="badge bg-naval">4</span></button>
+          <button type="button" class="btn btn-light">Light <span class="badge bg-dupain">4</span></button>
+          <button type="button" class="btn btn-dark">Dark <span class="badge bg-waterfall">4</span></button>
+          <button type="button" class="btn btn-link">Link <span class="badge bg-pearl">4</span></button>
+        </div>
       </div>
-      <div class="pt-4">
-        <span class="badge rounded-pill bg-gold">Gold</span>
-        <span class="badge rounded-pill bg-pico">Pico</span>
-        <span class="badge rounded-pill bg-purle">Purle</span>
-        <span class="badge rounded-pill bg-red">Red</span>
-        <span class="badge rounded-pill bg-naval">Naval</span>
-        <span class="badge rounded-pill bg-dupain">Dupain</span>
-        <span class="badge rounded-pill bg-waterfall">Waterfall</span>
-        <span class="badge rounded-pill bg-pearl">Pearl</span>
-      </div>
-      <div class="pt-4">
-        <span class="badge  bg-gold">Gold</span>
-        <span class="badge  bg-pico">Pico</span>
-        <span class="badge bg-purle">Purle</span>
-        <span class="badge bg-red">Red</span>
-        <span class="badge bg-naval">Naval</span>
-        <span class="badge bg-dupain">Dupain</span>
-        <span class="badge bg-waterfall">Waterfall</span>
-        <span class="badge bg-pearl">Pearl</span>
-      </div>
-      <div class="pt-4">
-        <button type="button" class="btn btn-primary">
-          Notifications <span class="badge bg-gold">4</span>
-        </button>
-        <button type="button" class="btn btn-secondary">Secondary <span class="badge bg-gold">4</span></button>
-        <button type="button" class="btn btn-success">Success <span class="badge bg-pico">4</span></button>
-        <button type="button" class="btn btn-danger">Danger <span class="badge bg-purle">4</span></button>
-        <button type="button" class="btn btn-warning">Warning <span class="badge bg-red">4</span></button>
-        <button type="button" class="btn btn-info">Info <span class="badge bg-naval">4</span></button>
-        <button type="button" class="btn btn-light">Light <span class="badge bg-dupain">4</span></button>
-        <button type="button" class="btn btn-dark">Dark <span class="badge bg-waterfall">4</span></button>
-        <button type="button" class="btn btn-link">Link <span class="badge bg-pearl">4</span></button>
+      <br>
+      <h4 class="text-success">2. Carousel</h4>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/carousel01.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/carousel02.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/carousel03.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
       </div>
     </div>
-    <br>
-    <h4 class="text-success">2. Carousel</h4>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/carousel01.jpg" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/carousel02.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/carousel03.jpg" alt="Third slide">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only"></span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only"></span>
-      </a>
-    </div>
-
     <!-- End Examples -->
     <hr class="mb-5">
     <!-- === Comment form === -->
