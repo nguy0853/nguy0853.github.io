@@ -242,6 +242,31 @@
       <br>
       <h4 class="text-success">1. Colors, Badges and Buttons</h4>
       <div class="container">
+        <p class="lead">Bootstrap provides different styles of buttons:</p>
+        <div class="pt-4">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-light">Light</button>
+          <button type="button" class="btn btn-dark">Dark</button>
+          <button type="button" class="btn btn-link">Link</button>
+        </div>
+        <br>
+        <p>To achieve the button styles above, Bootstrap has the following classes:</p>
+        <ul class="list-group">
+          <li class="list-group-item text-danger bg-light">.btn-primary</li>
+          <li class="list-group-item text-danger bg-light">.btn-secondary</li>
+          <li class="list-group-item text-danger bg-light">.btn-success</li>
+          <li class="list-group-item text-danger bg-light">.btn-danger</li>
+          <li class="list-group-item text-danger bg-light">.btn-warning</li>
+          <li class="list-group-item text-danger bg-light">.btn-info</li>
+          <li class="list-group-item text-danger bg-light">.btn-light</li>
+          <li class="list-group-item text-danger bg-light">.btn-dark</li>
+          <li class="list-group-item text-danger bg-light">.btn-link</li>
+        </ul>
         <div class="pt-4">
           <h1>Example heading <span class="badge bg-gold">New</span></h1>
           <h2>Example heading <span class="badge bg-pico">New</span></h2>
@@ -288,47 +313,48 @@
       </div>
       <br>
       <h4 class="text-success">2. Carousel</h4>
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <p class="lead">The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators. Example below is a carousel with controls</p>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="images/carousel01.jpg" alt="First slide">
+            <img src="images/carousel01.jpg" class="d-block w-100" alt="carousel01">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/carousel02.jpg" alt="Second slide">
+            <img src="images/carousel02.jpg" class="d-block w-100" alt="carousel02">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/carousel03.jpg" alt="Third slide">
+            <img src="images/carousel03.jpg" class="d-block w-100" alt="carousel03">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
       <br>
-        <div class="container-fluid">
-          <h4 class="text-success">3. Creating Grid system</h4>
-          <h5 class="text-warning">Resize your browser and see the result:</h5> 
-          <div class="row">
-            <div class="col-sm-4 bg-primary">.col-sm-4</div>
-            <div class="col-sm-6 bg-warning" >.col-sm-6</div>
-            <div class="col-sm-6 bg-success" >.col-sm-6</div>
-          </div>
-          <br>
-          <br>
-        </div>  
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm bg-primary ">col-sm</div>
-                <div class="col-sm bg-success ">col-sm</div>
-                <div class="col-sm bg-danger">col-sm</div>
-              </div>
-          </div>
-      
+      <div class="container-fluid">
+        <h4 class="text-success">3. Creating Grid system</h4>
+        <h5 class="text-warning">Resize your browser and see the result:</h5>
+        <div class="row">
+          <div class="col-sm-4 bg-primary">.col-sm-4</div>
+          <div class="col-sm-6 bg-warning">.col-sm-6</div>
+          <div class="col-sm-6 bg-success">.col-sm-6</div>
+        </div>
+        <br>
+        <br>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm bg-primary ">col-sm</div>
+          <div class="col-sm bg-success ">col-sm</div>
+          <div class="col-sm bg-danger">col-sm</div>
+        </div>
+      </div>
+
     </div>
     <!-- End Examples -->
     <hr class="mb-4">
