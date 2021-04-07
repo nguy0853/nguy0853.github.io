@@ -72,6 +72,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#examples">Examples</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -313,7 +316,9 @@
       </div>
       <br>
       <h4 class="text-success">2. Carousel</h4>
-      <p class="lead">The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators. Example below is a carousel with controls</p>
+      <p class="lead">The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms
+        and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for
+        previous/next controls and indicators. Example below is a carousel with controls</p>
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -326,11 +331,13 @@
             <img src="images/carousel03.jpg" class="d-block w-100" alt="carousel03">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -338,13 +345,22 @@
       <br>
       <div class="container-fluid">
         <h4 class="text-success">3. Creating Grid system</h4>
+        <h5>Container</h5>
+        <p>Bootstrap requires a containing element to wrap site contents and house our grid system. Without a container,
+          the grid won't work properly.</p>
+        <h5>Row</h5>
+        <p>Rows create horizontal groups of columns. Therefore, if you want to split your layout horizontally, use .row.
+        </p>
+        <h5>Columns</h5>
+        <p>Bootstrap's grid system allows up to 12 columns across the page.</p>
+
+
         <h5 class="text-warning">Resize your browser and see the result:</h5>
         <div class="row">
           <div class="col-sm-4 bg-primary">.col-sm-4</div>
           <div class="col-sm-6 bg-warning">.col-sm-6</div>
           <div class="col-sm-6 bg-success">.col-sm-6</div>
         </div>
-        <br>
         <br>
       </div>
       <div class="container-fluid">
@@ -354,27 +370,62 @@
           <div class="col-sm bg-danger">col-sm</div>
         </div>
       </div>
-
+      <br>
+      <br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 bg-warning">.col-4</div>
+          <div class="col-4 bg-success">.col-4</div>
+          <div class="col-4 bg-info">.col-4</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 bg-warning">.col-sm-4</div>
+          <div class="col-sm-4 bg-success">.col-sm-4</div>
+          <div class="col-sm-4 bg-info">.col-sm-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 bg-warning">.col-md-4</div>
+          <div class="col-md-4 bg-success">.col-md-4</div>
+          <div class="col-md-4 bg-info">.col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 bg-warning">.col-lg-4</div>
+          <div class="col-lg-4 bg-success">.col-lg-4</div>
+          <div class="col-lg-4 bg-info">.col-lg-4</div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 bg-warning">.col-xl-4</div>
+          <div class="col-xl-4 bg-success">.col-xl-4</div>
+          <div class="col-xl-4 bg-info">.col-xl-4</div>
+        </div>
+      </div>
     </div>
     <!-- End Examples -->
     <hr class="mb-4">
     <!-- === Comment form === -->
-    <h4 class="text-center">Any question? Shoot us a message!</h4>
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-          placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Send</button>
-    </form>
+    <div id="#contact">
+      <h4 class="text-center">Any question? Shoot us a message!</h4>
+      <form class="mb-4">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
     <!-- End Main content -->
   </div>
+  <footer class="pt-2 pb-2 bg-secondary">
+    <div class="container">
+      <p class="text-center text-white m-0">No Copyright</p>
+    </div>
+  </footer>
 
 
   <!-- Optional JavaScript; choose one of the two! -->
