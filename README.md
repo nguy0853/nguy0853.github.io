@@ -1,6 +1,6 @@
 #WEB PORTFOLIO 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PURPOSE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-I created my personal website to present a digital portfolio of my works and information to potential employers. 
+I created my personal website to present a digital portfolio of my works and information to potential employers. I used Bootstrap mostlt to style the layout. Besides, I overide some components by pure CSS to customize the transition. The website to me is still lacking of animation.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RESOURCES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Framework: Bootstrap 5 getbootstrap.com
 - Library: Bootstrap Icons
