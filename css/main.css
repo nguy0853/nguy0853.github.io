@@ -1,12 +1,13 @@
 :root {
   --bg-color: #f2f2f2;
   --primary-color: #FAA61A;
-  --accent-color: #37474F;
+  --accent-color: #414042;
 }
 
 html,
 body{
   font-family: 'Lato', sans-serif;
+  color: var(--accent-color);
 }
  
 h1,
@@ -14,6 +15,14 @@ h2,
 .btn {
   font-family: 'Fredoka One', cursive;
  } 
+
+h1{
+  color: var(--primary-color);
+}
+
+p {
+  font-size: 18px;
+}
 
 .nav-link {
   font: bold 16px Lato;
@@ -33,9 +42,10 @@ h2,
 
 .nav-link:hover, .nav-link:focus, .nav-link:active,
 .btn:hover, .btn:focus, .nav-link:active{
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
+
 
 
 /* HOVER HOVER HOVER WORK WORK WORK */
@@ -68,8 +78,12 @@ h2,
   z-index: 99;
 }
 
+.btn {
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+}
 
-/* DEMO 1 ============================== */
+/* Hover 1 on Works */
 .hover-1 img {
   width: 105%;
   position: absolute;
@@ -111,4 +125,8 @@ h2,
 
 .hover-1:hover .hover-overlay {
   opacity: 0;
+}
+
+footer svg {
+  color: var(--accent-color);
 }
